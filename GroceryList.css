@@ -1,0 +1,117 @@
+
+@font-face {
+    font-family: 'rajdhani';
+    src: url('./font/rajdhani-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helsinki';
+    src: url('./font/helsinki-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select:none;
+}
+
+body {
+    background: #666;
+    font-family: 'helsinki';
+    text-transform: uppercase;
+    color: white;
+}
+#container {
+    margin: auto;
+    width: 500px;
+    min-height: 618px;
+    background: #999;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 30px 1px #333, 0 0 30px 1px #333;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+}
+
+#headline {
+    margin: 10px;
+    font-size: 48px;
+    text-shadow: 0 0 5px #666, 0 0 5px #666;
+}
+
+input[type="text"] {
+    padding: 6px 30px;
+    border-radius: 4px;
+    border: 3px solid #ddd;
+    font-weight: bold;
+    outline: none;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0 0 8px 1px #666, 0 0 8px 1px #666;
+}
+#btn {
+    padding: 5px 18px;
+    background: #ccc;
+    color: white;
+    border: 3px solid #ddd;
+    box-shadow: inset 0 0 3px 1px #999, 0 0 3px 1px #999;
+    border-radius: 4px;
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#output {
+    background: #ccc;
+    border: 4px solid #ddd;
+    width: 95%;
+    min-height: 428px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: inset 0 0 3px 1px #999, 0 0 3px 1px #999;
+    border-radius: 4px 4px 30px 30px;
+}
+.class-style {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 0 0 2px #666, 0 0 2px #666;
+    user-select:none;
+}
+
+p.class-style:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+p.class-style:not(:hover) {
+    transition: 0.3s;
+}
+
+#btn:hover {
+    background: #bbb;
+    text-shadow: 0 0 2px #666, 0 0 2px #666;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 550px){
+    #container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 374px){
+    #headline {
+    font-size: 36px;
+    }
+}
